@@ -1,0 +1,33 @@
+// Generated Code Do Not Modify
+// package javax.microedition.khronos.opengles
+import jr
+
+pub fn jclasses() -> List(jr.Class) {
+    [c1_class()]
+}
+
+// class GL11
+
+fn c1_jfields(this: jr.V) -> jr.V {
+    jr.JNull
+}
+
+fn c1_jclinit(this: jr.V) -> jr.V {
+    jr.JNull
+}
+
+fn c1_class() -> jr.Class {
+    jr.Class(
+        "GL11",
+        "javax.microedition.khronos.opengles.GL11",
+        "Object",
+        ["GL10"],
+        True,
+        [],
+        [#("GL_ACTIVE_TEXTURE", jr.as_i(jr.JInt(34016))), #("GL_ADD_SIGNED", jr.as_i(jr.JInt(34164))), #("GL_ALPHA_SCALE", jr.as_i(jr.JInt(3356))), #("GL_ALPHA_TEST_FUNC", jr.as_i(jr.JInt(3009))), #("GL_ALPHA_TEST_REF", jr.as_i(jr.JInt(3010))), #("GL_ARRAY_BUFFER", jr.as_i(jr.JInt(34962))), #("GL_ARRAY_BUFFER_BINDING", jr.as_i(jr.JInt(34964))), #("GL_BLEND_DST", jr.as_i(jr.JInt(3040))), #("GL_BLEND_SRC", jr.as_i(jr.JInt(3041))), #("GL_BUFFER_ACCESS", jr.as_i(jr.JInt(35003))), #("GL_BUFFER_SIZE", jr.as_i(jr.JInt(34660))), #("GL_BUFFER_USAGE", jr.as_i(jr.JInt(34661))), #("GL_CLIENT_ACTIVE_TEXTURE", jr.as_i(jr.JInt(34017))), #("GL_CLIP_PLANE0", jr.as_i(jr.JInt(12288))), #("GL_CLIP_PLANE1", jr.as_i(jr.JInt(12289))), #("GL_CLIP_PLANE2", jr.as_i(jr.JInt(12290))), #("GL_CLIP_PLANE3", jr.as_i(jr.JInt(12291))), #("GL_CLIP_PLANE4", jr.as_i(jr.JInt(12292))), #("GL_CLIP_PLANE5", jr.as_i(jr.JInt(12293))), #("GL_COLOR_ARRAY_BUFFER_BINDING", jr.as_i(jr.JInt(34968))), #("GL_COLOR_ARRAY_POINTER", jr.as_i(jr.JInt(32912))), #("GL_COLOR_ARRAY_SIZE", jr.as_i(jr.JInt(32897))), #("GL_COLOR_ARRAY_STRIDE", jr.as_i(jr.JInt(32899))), #("GL_COLOR_ARRAY_TYPE", jr.as_i(jr.JInt(32898))), #("GL_COLOR_CLEAR_VALUE", jr.as_i(jr.JInt(3106))), #("GL_COLOR_WRITEMASK", jr.as_i(jr.JInt(3107))), #("GL_COMBINE", jr.as_i(jr.JInt(34160))), #("GL_COMBINE_ALPHA", jr.as_i(jr.JInt(34162))), #("GL_COMBINE_RGB", jr.as_i(jr.JInt(34161))), #("GL_CONSTANT", jr.as_i(jr.JInt(34166))), #("GL_COORD_REPLACE_OES", jr.as_i(jr.JInt(34914))), #("GL_CULL_FACE_MODE", jr.as_i(jr.JInt(2885))), #("GL_CURRENT_COLOR", jr.as_i(jr.JInt(2816))), #("GL_CURRENT_NORMAL", jr.as_i(jr.JInt(2818))), #("GL_CURRENT_TEXTURE_COORDS", jr.as_i(jr.JInt(2819))), #("GL_DEPTH_CLEAR_VALUE", jr.as_i(jr.JInt(2931))), #("GL_DEPTH_FUNC", jr.as_i(jr.JInt(2932))), #("GL_DEPTH_RANGE", jr.as_i(jr.JInt(2928))), #("GL_DEPTH_WRITEMASK", jr.as_i(jr.JInt(2930))), #("GL_DOT3_RGB", jr.as_i(jr.JInt(34478))), #("GL_DOT3_RGBA", jr.as_i(jr.JInt(34479))), #("GL_DYNAMIC_DRAW", jr.as_i(jr.JInt(35048))), #("GL_ELEMENT_ARRAY_BUFFER", jr.as_i(jr.JInt(34963))), #("GL_ELEMENT_ARRAY_BUFFER_BINDING", jr.as_i(jr.JInt(34965))), #("GL_FRONT_FACE", jr.as_i(jr.JInt(2886))), #("GL_GENERATE_MIPMAP", jr.as_i(jr.JInt(33169))), #("GL_GENERATE_MIPMAP_HINT", jr.as_i(jr.JInt(33170))), #("GL_INTERPOLATE", jr.as_i(jr.JInt(34165))), #("GL_LINE_WIDTH", jr.as_i(jr.JInt(2849))), #("GL_LOGIC_OP_MODE", jr.as_i(jr.JInt(3056))), #("GL_MATRIX_MODE", jr.as_i(jr.JInt(2976))), #("GL_MAX_CLIP_PLANES", jr.as_i(jr.JInt(3378))), #("GL_MODELVIEW_MATRIX", jr.as_i(jr.JInt(2982))), #("GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES", jr.as_i(jr.JInt(35213))), #("GL_MODELVIEW_STACK_DEPTH", jr.as_i(jr.JInt(2979))), #("GL_NORMAL_ARRAY_BUFFER_BINDING", jr.as_i(jr.JInt(34967))), #("GL_NORMAL_ARRAY_POINTER", jr.as_i(jr.JInt(32911))), #("GL_NORMAL_ARRAY_STRIDE", jr.as_i(jr.JInt(32895))), #("GL_NORMAL_ARRAY_TYPE", jr.as_i(jr.JInt(32894))), #("GL_OPERAND0_ALPHA", jr.as_i(jr.JInt(34200))), #("GL_OPERAND0_RGB", jr.as_i(jr.JInt(34192))), #("GL_OPERAND1_ALPHA", jr.as_i(jr.JInt(34201))), #("GL_OPERAND1_RGB", jr.as_i(jr.JInt(34193))), #("GL_OPERAND2_ALPHA", jr.as_i(jr.JInt(34202))), #("GL_OPERAND2_RGB", jr.as_i(jr.JInt(34194))), #("GL_POINT_DISTANCE_ATTENUATION", jr.as_i(jr.JInt(33065))), #("GL_POINT_FADE_THRESHOLD_SIZE", jr.as_i(jr.JInt(33064))), #("GL_POINT_SIZE", jr.as_i(jr.JInt(2833))), #("GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES", jr.as_i(jr.JInt(35743))), #("GL_POINT_SIZE_ARRAY_OES", jr.as_i(jr.JInt(35740))), #("GL_POINT_SIZE_ARRAY_POINTER_OES", jr.as_i(jr.JInt(35212))), #("GL_POINT_SIZE_ARRAY_STRIDE_OES", jr.as_i(jr.JInt(35211))), #("GL_POINT_SIZE_ARRAY_TYPE_OES", jr.as_i(jr.JInt(35210))), #("GL_POINT_SIZE_MAX", jr.as_i(jr.JInt(33063))), #("GL_POINT_SIZE_MIN", jr.as_i(jr.JInt(33062))), #("GL_POINT_SPRITE_OES", jr.as_i(jr.JInt(34913))), #("GL_POLYGON_OFFSET_FACTOR", jr.as_i(jr.JInt(32824))), #("GL_POLYGON_OFFSET_UNITS", jr.as_i(jr.JInt(10752))), #("GL_PREVIOUS", jr.as_i(jr.JInt(34168))), #("GL_PRIMARY_COLOR", jr.as_i(jr.JInt(34167))), #("GL_PROJECTION_MATRIX", jr.as_i(jr.JInt(2983))), #("GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES", jr.as_i(jr.JInt(35214))), #("GL_PROJECTION_STACK_DEPTH", jr.as_i(jr.JInt(2980))), #("GL_RGB_SCALE", jr.as_i(jr.JInt(34163))), #("GL_SAMPLE_BUFFERS", jr.as_i(jr.JInt(32936))), #("GL_SAMPLE_COVERAGE_INVERT", jr.as_i(jr.JInt(32939))), #("GL_SAMPLE_COVERAGE_VALUE", jr.as_i(jr.JInt(32938))), #("GL_SAMPLES", jr.as_i(jr.JInt(32937))), #("GL_SCISSOR_BOX", jr.as_i(jr.JInt(3088))), #("GL_SHADE_MODEL", jr.as_i(jr.JInt(2900))), #("GL_SRC0_ALPHA", jr.as_i(jr.JInt(34184))), #("GL_SRC0_RGB", jr.as_i(jr.JInt(34176))), #("GL_SRC1_ALPHA", jr.as_i(jr.JInt(34185))), #("GL_SRC1_RGB", jr.as_i(jr.JInt(34177))), #("GL_SRC2_ALPHA", jr.as_i(jr.JInt(34186))), #("GL_SRC2_RGB", jr.as_i(jr.JInt(34178))), #("GL_STATIC_DRAW", jr.as_i(jr.JInt(35044))), #("GL_STENCIL_CLEAR_VALUE", jr.as_i(jr.JInt(2961))), #("GL_STENCIL_FAIL", jr.as_i(jr.JInt(2964))), #("GL_STENCIL_FUNC", jr.as_i(jr.JInt(2962))), #("GL_STENCIL_PASS_DEPTH_FAIL", jr.as_i(jr.JInt(2965))), #("GL_STENCIL_PASS_DEPTH_PASS", jr.as_i(jr.JInt(2966))), #("GL_STENCIL_REF", jr.as_i(jr.JInt(2967))), #("GL_STENCIL_VALUE_MASK", jr.as_i(jr.JInt(2963))), #("GL_STENCIL_WRITEMASK", jr.as_i(jr.JInt(2968))), #("GL_SUBTRACT", jr.as_i(jr.JInt(34023))), #("GL_TEXTURE_BINDING_2D", jr.as_i(jr.JInt(32873))), #("GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING", jr.as_i(jr.JInt(34970))), #("GL_TEXTURE_COORD_ARRAY_POINTER", jr.as_i(jr.JInt(32914))), #("GL_TEXTURE_COORD_ARRAY_SIZE", jr.as_i(jr.JInt(32904))), #("GL_TEXTURE_COORD_ARRAY_STRIDE", jr.as_i(jr.JInt(32906))), #("GL_TEXTURE_COORD_ARRAY_TYPE", jr.as_i(jr.JInt(32905))), #("GL_TEXTURE_MATRIX", jr.as_i(jr.JInt(2984))), #("GL_TEXTURE_MATRIX_FLOAT_AS_INT_BITS_OES", jr.as_i(jr.JInt(35215))), #("GL_TEXTURE_STACK_DEPTH", jr.as_i(jr.JInt(2981))), #("GL_VERTEX_ARRAY_BUFFER_BINDING", jr.as_i(jr.JInt(34966))), #("GL_VERTEX_ARRAY_POINTER", jr.as_i(jr.JInt(32910))), #("GL_VERTEX_ARRAY_SIZE", jr.as_i(jr.JInt(32890))), #("GL_VERTEX_ARRAY_STRIDE", jr.as_i(jr.JInt(32892))), #("GL_VERTEX_ARRAY_TYPE", jr.as_i(jr.JInt(32891))), #("GL_VIEWPORT", jr.as_i(jr.JInt(2978))), #("GL_WRITE_ONLY", jr.as_i(jr.JInt(35001)))],
+        [],
+        c1_jfields,
+        c1_jclinit,
+    )
+}
+

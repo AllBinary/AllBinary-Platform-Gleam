@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>InputAutomationToolsGleam</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>InputAutomationToolsGleam</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <!--
+        <module>../AllBinaryCoreJavaLibraryGleamM</module>        
+        -->
+
+        <module>../../replace_these_stub_projects/osgi/YourOSGIComponentLibraryGleamM</module>
+        <module>../../allbinary_src/AllBinaryOSGIJavaLibraryGleamM</module>
+
+        <module>../../graphics/ColorJavaLibraryGleamM</module>
+        <module>../../graphics/ImageJavaLibraryGleamM</module>
+        <module>../../graphics/ImageComparisonJavaLibraryGleamM</module>
+        <module>../../graphics/AdvancedImageJ2SEJavaLibraryGleamM</module>
+        
+        <module>../InputAutomationModuleJavaLibraryGleamM</module>
+        
+        <module>../InputAutomationActionScriptJavaLibraryGleamM</module>
+        <module>../InputAutomationGenericModuleJavaLibraryGleamM</module>
+        <module>../InputAutomationGeneric2ModuleJavaLibraryGleamM</module>
+
+        <module>../../allbinary_src/HelpJavaLibraryGleamM</module>
+        <module>../InputAutomationJavaLibraryGleamM</module>
+
+        <module>../InputAutomationJavaApplicationGleamM</module>
+        
+        <module>../../game/InputAutomationGameModulesJavaLibraryGleamM</module>
+        
+        <module>../AllBinaryCoreJavaLibraryGleamM</module>
+    </modules>
+
+</project>
+

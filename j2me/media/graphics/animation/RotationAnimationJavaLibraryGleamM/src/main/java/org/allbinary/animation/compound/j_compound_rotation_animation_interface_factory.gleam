@@ -1,0 +1,61 @@
+// Generated Code Do Not Modify
+// package org.allbinary.animation.compound
+import jr
+
+pub fn jclasses() -> List(jr.Class) {
+    [c1_class()]
+}
+
+// class CompoundRotationAnimationInterfaceFactory
+
+fn c1_jfields(this: jr.V) -> jr.V {
+    jr.JNull
+}
+
+fn c1_jclinit(this: jr.V) -> jr.V {
+    jr.JNull
+}
+
+fn c1_m2__createarray(this: jr.V, jargs: List(jr.V)) -> jr.V {
+    let assert [l_size] = jargs
+    let l_size = jr.as_i(l_size)
+    jr.new_array("L", 1, [l_size])
+}
+
+fn c1_m3__createanimation(this: jr.V, jargs: List(jr.V)) -> jr.V {
+    let assert [l_animation_interface_array] = jargs
+    jr.new("CompoundRotationAnimation", [l_animation_interface_array, jr.call(jr.get_inherited(this, "CompoundRotationAnimationInterfaceFactory", "animationBehaviorFactory"), "getOrCreateInstance_0", [])])
+}
+
+fn c1_jinit1(this: jr.V, jargs: List(jr.V)) -> jr.V {
+    let assert [l_basic_animation_interface_factory_interface_array, l_animation_behavior_factory] = jargs
+        jr.super_init("CompoundAnimationInterfaceFactory", this, [l_basic_animation_interface_factory_interface_array, l_animation_behavior_factory])
+        c1_jfields(this)
+        case jr.truth(jr.eq(l_animation_behavior_factory, jr.call_static("AnimationBehaviorFactory", "getInstance_0", []))) {
+            True -> {
+            jr.call_static("ForcedLogUtil", "log_2", [jr.JStr("Using default AnimationBehaviorFactory with IndexedAnimationFactory"), this])
+            Nil
+        }
+            False -> Nil
+        }
+    this
+}
+
+fn c1_class() -> jr.Class {
+    jr.Class(
+        "CompoundRotationAnimationInterfaceFactory",
+        "org.allbinary.animation.compound.CompoundRotationAnimationInterfaceFactory",
+        "CompoundAnimationInterfaceFactory",
+        [],
+        False,
+        [],
+        [],
+        [
+            jr.Method("createArray_1", ["int"], False, c1_m2__createarray), 
+            jr.Method("createAnimation_1", ["AnimationArr"], False, c1_m3__createanimation), 
+            jr.Method("jinit_2", ["AnimationInterfaceFactoryInterfaceArr", "AnimationBehaviorFactory"], False, c1_jinit1)],
+        c1_jfields,
+        c1_jclinit,
+    )
+}
+

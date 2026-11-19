@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPGleam</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPGleam</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryGleamP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryGleamM</module>
+        -->
+
+        <module>../licensing/TestServiceClientInfoJavaLibraryGleamM</module>        
+
+        <module>../data/DataTableInterfacesGleamM</module>
+        
+        <module>../QueueJavaLibraryGleamM</module>
+        
+        <!--
+        <module>../TokenizerJavaLibraryGleamM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryGleamM</module>
+
+        <module>../JavaUtilLibraryGleamM</module>
+        <module>../NullInitInfoJavaLibraryGleamM</module>        
+        <module>../InitInfoJavaLibraryGleamM</module>
+        <module>../PreLoaderHttpJavaLibraryGleamM</module>
+        
+        <module>../TagsBaseJavaLibraryGleamM</module>
+        <module>../CustomLoaderJavaLibraryGleamM</module>
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryGleamM</module>
+        <module>../logic/data/file/FileJavaLibraryGleamM</module>
+        -->
+
+        <module>../data/SQLAllBinaryJavaLibraryGleamM</module>
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryGleamM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryGleamM</module>
+
+        <module>../VisualStyleJavaLibraryGleamM</module>
+
+        <module>../ConfigurationJavaLibraryGleamM</module>
+
+        <module>../VisualTransformBaseJavaLibraryGleamM</module>
+
+        <module>../CategoryBaseJavaLibraryGleamM</module>
+        <module>../CategoryJavaLibraryGleamM</module>
+
+        <module>../UserJavaLibraryGleamM</module>
+
+        <module>../PaymentGatewayBaseJavaLibraryGleamM</module>
+
+        <module>../data/vo/EntitiesBlisketVOJavaLibraryGleamM</module>
+        <module>../PaymentGatewayJavaLibraryGleamM</module>
+        <module>../data/vo/EntitiesOrderHistoryVOJavaLibraryGleamM</module>
+        <module>../data/vo/EntityPaymentGatewayVOJavaLibraryGleamM</module>
+        <module>../data/vo/EntityStoreFrontVOJavaLibraryGleamM</module>
+
+        <module>../data/EntitiesBlisketBaseInterfacesJavaLibraryGleamM</module>
+        <module>../data/EntitiesBlisketBaseJavaLibraryGleamM</module>
+        
+        <module>../data/EntitiesAdvertisementBaseJavaLibraryGleamM</module>
+        <module>../data/EntityOrderHistoryJavaLibraryGleamM</module>
+        <module>../data/EntityPaymentGatewayJavaLibraryGleamM</module>
+        <module>../data/EntityVisualTransformJavaLibraryGleamM</module>
+        <module>../data/EntityUserJavaLibraryGleamM</module>
+        <module>../data/EntityWorkflowJavaLibraryGleamM</module>
+
+        <module>../SMTPConfigurationJavaLibraryGleamM</module>
+        <module>../SMTPBaseJavaLibraryGleamM</module>
+
+        <module>../VisualTransformJavaLibraryGleamM</module>
+
+        <module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryGleamM</module>
+        <module>../GatewayJavaLibraryGleamM</module>
+        
+        <module>../WorkflowBaseJavaLibraryGleamM</module>
+        <module>../WorkflowJavaLibraryGleamM</module>
+
+        <module>../IdGeneratorUsingFilesJavaLibraryGleamM</module>
+        <module>../BlisketPreVOJavaLibraryGleamM</module>
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <module>../BlisketVOJavaLibraryGleamM</module>
+
+        <module>../UserCommerceJavaLibraryGleamM</module>
+
+        <module>../CustomizerValidatorsJavaLibraryGleamM</module>
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <module>../logic/data/file/FileMediaJ2SEJavaLibraryGleamM</module>
+        <module>../BlisketBaseJavaLibraryGleamM</module>
+
+        <module>../logging/LoggingGAEAllGleamM</module>
+        <module>../BlisketJavaLibraryGleamM</module>
+        
+    </modules>
+
+</project>
+

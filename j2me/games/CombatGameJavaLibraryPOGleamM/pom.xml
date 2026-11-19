@@ -1,0 +1,143 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMGleam</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMGleam</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryGleamM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryGleamM</module>
+
+        <module>../../../physics/MovementJavaLibraryGleamM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryGleamM</module>
+        <module>../../games/PickupGameJavaLibraryGleamM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryGleamM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryGleamM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryGleamM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryGleamM</module>
+        <!--<module>../../games/licensing/PartnerHTMLJavaLibraryGleamM</module>-->
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryGleamM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryGleamM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryGleamM</module>
+        <!--<module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryGleamM</module>-->
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryGleamM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryGleamM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryGleamM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryGleamM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryGleamM</module>
+        <!--<module>../../games/GameScoresRemoteAndLocalJavaLibraryGleamM</module>-->
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryGleamM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryGleamM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryGleamM</module>
+        <module>../../games/CollisionLibraryGleamM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryGleamM</module>
+
+        <module>../../games/PickupLayerJavaLibraryGleamM</module>
+
+        <module>../../games/DamageGameJavaLibraryGleamM</module>
+        <module>../../games/DropJavaLibraryGleamM</module>
+        <module>../../games/WeaponLayerJavaLibraryGleamM</module>
+
+        <module>../../games/CombatGameJavaLibraryGleamM</module>
+        <module>../../games/LifeJavaLibraryGleamM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryGleamM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryGleamM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryGleamM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryGleamM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryGleamM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryGleamM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryGleamM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryGleamM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackGleamP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workgleam/j2me/games/strategy/rts/RTSGameJavaLibraryGleamP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryGleamP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryGleamM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryGleamM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryGleamM</module>
+
+        <module>../../input/TrackingEventJavaLibraryGleamM</module>
+        <module>../../../game/behavior/BehaviorLibraryGleamP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryGleamP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryGleamM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryGleamM</module>
+        <!--<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryGleamM</module>-->
+
+        <!--<module>../../android/VirtualKeyboardJavaLibraryGleamM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

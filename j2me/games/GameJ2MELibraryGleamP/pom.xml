@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMGleam</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMGleam</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryGleamM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryGleamM</module>
+        <!--
+        <module>../../../../working_thirdpartygleam/security/BouncyCastleDESJavaLibraryGleamM</module>
+        <module>../../../../working_thirdpartygleam/communication/XmlRpc/XmlRpcJavaLibraryGleamM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryGleamM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryGleamM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryGleamM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryGleamM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryGleamM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryGleamM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryGleamM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryGleamM</module>
+
+        <module>../../DebugJavaLibraryGleamM</module>             
+        <module>../../ResourceLibraryGleamM</module>
+        <module>../../ResourceJ2MEJavaLibraryGleamM</module>
+        <!--<module>../../AndroidResourceLibraryGleamM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryGleamM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryGleamM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryGleamM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryGleamM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryGleamM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryGleamM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryGleamM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryGleamM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryGleamM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryGleamM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryGleamM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryGleamM</module>
+
+        <module>../../games/GameInputLibraryGleamM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryGleamM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryGleamM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryGleamM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryGleamM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryGleamM</module>   
+        <module>../../games/GameConfigurationJavaLibraryGleamM</module>
+
+        <module>../../games/GameIntermissionLibraryGleamM</module>
+
+        <module>../../GroupLibraryGleamM</module>
+
+        <module>../../input/NoSensorJavaLibraryGleamM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryGleamM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryGleamM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryGleamM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryGleamM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryGleamM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryGleamM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryGleamM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryGleamM</module>
+        <module>../../input/platform/pc/GameInputSwtJavaLibraryGleamM</module>
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryGleamM</module>
+        <module>../../input/MotionGestureJavaLibraryGleamM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryGleamM</module>
+
+        <module>../../games/GameInputPersistanceLibraryGleamM</module>
+        <module>../../games/GameInputNoPersistanceLibraryGleamM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryGleamM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryGleamM</module>
+        <module>../../input/NoGyroSensorJavaLibraryGleamM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryGleamM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryGleamM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryGleamM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryGleamM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryGleamM</module>
+        <module>../../media/sound/SoundJ2MELibraryGleamM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryGleamM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryGleamM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryGleamM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryGleamM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryGleamM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryGleamM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryGleamM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryGleamM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryGleamM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryGleamM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryGleamM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryGleamM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryGleamM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryGleamM</module>
+        <module>../../games/GameResourceJavaLibraryGleamM</module>
+        <module>../../games/GameSoundsJavaLibraryGleamM</module>
+
+        <module>../../input/TouchInputLibraryGleamP</module>
+
+        <module>../../media/MediaDataGleamM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryGleamM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryGleamM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryGleamM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryGleamM</module>
+
+        <module>../../FullScreenNoneJavaLibraryGleamM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryGleamM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryGleamM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryGleamM</module>
+
+        <module>../../lib/TrigJ2MELibraryGleamM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryGleamM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryGleamM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryGleamM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryGleamM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryGleamM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryGleamM</module>
+
+        <module>../GameNotificationJavaLibraryGleamM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryGleamM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryGleamM</module>
+        <module>../SWTJavaLibraryGleamM</module>
+        <module>../GameJ2MELibraryGleamM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOGleamM</module>
+        -->
+    
+    </modules>
+
+</project>
+

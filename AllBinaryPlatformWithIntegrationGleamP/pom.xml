@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryPlatformWithIntegrationPOMGleam</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryPlatformWithIntegrationPOMGleam</name>
+    <url>http://www.allbinary.com/</url>
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+        -->
+        <module>../../AllBinary-Platform-Integration</module>
+        
+<!--        <module>../j2me/games/platform/j2se/AllBinaryOnJ2SEBasePlatformJavaLibraryGleamM</module>-->
+        <module>../j2me/games/platform/j2se/AllBinaryOnJ2SEPlatformJavaLibraryGleamM</module>
+        
+        <!--<module>../j2me/FullScreenJavaLibraryGleamM</module>-->
+
+        <!--<module>../j2me/SWTToJ2MELibraryGleamM</module>-->
+        
+        <module>../j2me/media/graphics/ImageCacheOpenGLESJavaLibraryGleamM</module>
+        <module>../graphics/opengl/Min3dForNullJavaLibraryGleamM</module>
+        <module>../graphics/opengl/OpenGLESFileConfigurationJavaLibraryGleamM</module>
+        <module>../graphics/opengl/OpenGLESJavaLibraryGleamM</module>
+        <module>../j2me/media/graphics/animation/vector/SVGToAllBinaryJavaLibraryGleamM</module>
+        <!--<module>../j2me/media/graphics/animation/image/ImageSwtJ2SEJavaLibraryGleamM</module>-->
+
+        <module>../j2me/media/graphics/layer/AllBinaryTiledLayerJavaLibraryGleamM</module>        
+        <module>../j2me/media/graphics/geography/map/GeographicMapLibraryGleamM</module>
+        <module>../j2me/media/graphics/geography/GeographicPathFindingLibraryGleamM</module>
+        <module>../j2me/media/graphics/geography/map/RaceTrackGeographicMapLibraryGleamM</module>
+        <module>../j2me/media/graphics/geography/map/BasicTopViewGeographicMapJavaLibraryGleamM</module>
+        <module>../j2me/games/arcade/platformer/TopViewGameBehaviorJavaLibraryGleamM</module>
+
+        <module>../j2me/games/GameJ2MEOptionalLibraryPOGleamM</module>
+
+        <module>../j2me/media/graphics/geography/map/GraphGleamP</module>
+        <module>../j2me/games/strategy/rts/RTSGameJavaLibraryGleamP</module>
+        
+        <!--<module>../j2me/android/AllBinaryPlatformAndroidLibraryPOGleamM</module>-->
+
+    </modules>
+
+    <dependencies>
+        
+    </dependencies>
+
+</project>
+

@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>GameJ2MEOptionalLibraryPOMGleam</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>GameJ2MEOptionalLibraryPOMGleam</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+        
+        <!--<module>../../ProgressLazyJ2MEJavaLibraryGleamM</module>-->
+        <!--
+                <module>../../games/GameScoresBaseHTMLLibraryGleamM</module>
+                <module>../../games/GameScoresJ2MEJavaLibraryGleamM</module>
+                <module>../../../allbinary_src/licensing/RemoteXmlRpcJavaLibraryGleamM</module>
+                <module>../../games/GameScoresLocalLibraryGleamM</module>
+                <module>../../games/GameScoresRemoteAndLocalLibraryGleamM</module>
+        -->
+<!-- in GameJ2MELibraryPOM <module>../../media/graphics/ImageCacheJ2MEJavaLibraryGleamM</module>-->
+        <!--<module>../../media/graphics/ImageCacheLazyJ2MEJavaLibraryGleamM</module>-->
+        <!--        <module>../../media/graphics/ImageCacheOpenGLESJavaLibraryGleamM</module>-->
+        <module>../../media/graphics/LazyGameResourceNoneJavaLibraryGleamM</module>
+
+<!-- in GameJ2MELibraryPOM <module>../../../graphics/opengl/OpenGLNoneJavaLibraryGleamM</module>-->
+
+        <!--
+                <module>../../../graphics/opengl/OpenGLESJavaLibraryGleamM</module>
+        -->
+
+<!-- in GameJ2MELibraryPOM <module>../../input/JSEGyroSensorJavaLibraryGleamM</module>-->
+        <!--        
+                <module>../../ProgressJ2MEJavaLibraryGleamM</module>
+        -->
+        <!--        
+                //At some point the GameInput libraries were here
+        -->
+        
+        <!--
+        ../../
+        <module>../../../../workgleam/j2me/media/graphics/FormJMEJavaLibraryGleamM</module>
+        -->
+        <!--
+        ../../
+        <module>../../../../workgleam/j2me/media/graphics/FormJSEJavaLibraryGleamM</module>
+        -->
+
+        <!--<module>../../media/sound/J2SEMediaMIDPMinimalJavaLibraryGleamM</module>-->
+<!--        <module>../../media/sound/NotDeviceSpecificMIDP2JavaLibraryGleamM</module>-->
+        <!--<module>../../media/sound/MediaMIDP2ForHTMLJavaLibraryGleamM</module>-->
+
+        <!--
+                <module>../../../../workgleam/j2me/ScreenCaptureAndroidJavaLibraryGleamM</module>
+        -->
+    </modules>
+
+</project>
+
